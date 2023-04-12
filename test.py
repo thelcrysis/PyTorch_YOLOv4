@@ -374,7 +374,7 @@ def test(
             else ""
         )  # weights
 
-        anno_json = glob.glob("../../coco/annotations/instances_val*.json")[
+        anno_json = glob.glob("/kaggle/datasets/coco/annotations/instances_val*.json")[
             0
         ]  # annotations json
         pred_json = str(save_dir / f"{w}_predictions.json")  # predictions json
